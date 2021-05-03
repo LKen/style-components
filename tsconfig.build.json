@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext", // 生成的模块引入类型
+    "target": "ES5",
+    "declaration": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "Node", // 文件引入方式
+    "allowSyntheticDefaultImports": true // ES 6 import 引入方式
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx",
+    "src/setupTests.ts",
+    "src/stories/**/*"
+  ]
+}

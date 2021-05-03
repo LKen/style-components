@@ -1,0 +1,19 @@
+// config
+@import "variables";
+
+//layout
+@import "reboot";
+
+@import "mixin";
+
+@import "animation";
+
+// SASS会通过这些下划线来辨别哪些文件是SASS片段，并且不让片段内容直接生成为CSS文件，从而只是在使用@import指令的位置被导入
+// 并且不会产生新的HTTP请求
+@import "../components/Botton/style";
+@import "../components/Menu/style";
+@import "../components/Input/style";
+@import "../components/AutoComplete/style";
+@import "../components/Upload/style";
+@import "../components/Progress/style";
+@import "../components/Icon/style";
