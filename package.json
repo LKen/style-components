@@ -22,11 +22,6 @@
   "files": [
     "dist"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:nowatch && npm run lint"
-    }
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run clean && npm run build-ts && npm run build-css",
@@ -99,7 +94,7 @@
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
-    "@types/react-transition-group": "^4.4.1",
+    "@types/react-transition-group": "jnpx^4.4.1",
     "cra-template-typescript": "1.1.2",
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.1.0",
