@@ -3,11 +3,16 @@
   "description": "Study React components library",
   "version": "0.1.0",
   "author": "LKen",
-  "private": true,
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "homepage": "https://github.com/LKen/style-components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LKen/style-components"
+  },
   "keywords": [
     "Component",
     "UI",
@@ -17,6 +22,11 @@
   "files": [
     "dist"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:nowatch && npm run lint"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run clean && npm run build-ts && npm run build-css",
@@ -94,6 +104,7 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^6.0.0",
     "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
     "react": "^17.0.2",

@@ -1,3 +1,7 @@
+/**
+ * 触发事件 hook, 除输入源外，点击其他文档将会取消
+ */
+
 import { RefObject, useEffect } from 'react'
 
 const useClickOutside = (ref: RefObject<HTMLElement>, handler: Function) => {
