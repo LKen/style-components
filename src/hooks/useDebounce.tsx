@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
 import { debounce } from 'lodash'
-
+/**
+ * 添加 value 响应的节流器
+ * @param value useState 获取的值
+ * @param delay 延迟的时间
+ * @returns
+ */
 function useDebounce(value: string, delay = 300) {
   const [debounceValue, setDebounceValue] = useState(value)
 
